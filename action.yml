@@ -4,7 +4,7 @@ runs:
   using: composite
   steps:
     - name: Activate Homebrew
-      run: eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+      run: eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
       shell: bash
     - name: Install ACME
       run: brew install acme
