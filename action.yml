@@ -4,6 +4,7 @@ runs:
   using: composite
   steps:
     - name: Install ACME
-      run: /home/linuxbrew/.linuxbrew/bin/brew install acme
-      shell: bash
-    
+      run: |
+        /home/linuxbrew/.linuxbrew/bin/brew install acme
+        echo "/home/linuxbrew/.linuxbrew/Cellar/acme/0.97/bin/" >> $GITHUB_PATH
+      shell: bash    
